@@ -1,8 +1,8 @@
 # BrewAdjustment
 
-This is a Python script for brewing adjustment. It provides solutions for water chemistry problems and helps adjust the water profile for brewing to better match beer styles. It's based on the following concepts:
+This is a Python script for optimizing brewing water adjustments. It provides solutions for water chemistry problems that helps adjust the water profile for brewing to better match beer styles. It's based on the following concepts:
 
-- Different styles of beer require different water profiles. For example, an Oktoberfest style beer has different ion concentration requirements compared to a Blonde ale.
+- Different styles of beer require different water profiles. For example, an Oktoberfest lager has different ion concentration targets compared to a Blonde ale.
 - The ratio of chloride to sulfate has a significant effect on the perception of beer. High chloride to sulfate ratios make the beer sweeter while high sulfate to chloride ratios make the beer more bitter.
 - Chemicals like baking soda, gypsum, calcium chloride, epsom salt, and chalk can be added to water to adjust the ion concentrations.
 
@@ -23,8 +23,9 @@ To use this script, instantiate the `BrewAdjustment` class with the volume of wa
 volume = 5  # volume of water in gallons
 brew = BrewAdjustment(volume)
 brew.adjust_water()
+```
 
-This will output the optimal adjustments for the water and a comparison between the initial, target, and final ion concentrations.
+This will output the optimal adjustments for the water based on initial, target, and final ion concentrations.
 
 ## Customization
 
